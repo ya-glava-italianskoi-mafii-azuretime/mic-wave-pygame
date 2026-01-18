@@ -34,8 +34,8 @@ stream.start()
 
 running = True
 while running:
-    for event in event.get():
-        if event.type == QUIT:
+    for e in event.get():
+        if e.type == QUIT:
             running = False
 
     screen.fill((0, 0, 0))
